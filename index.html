@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+
+ <!-------sidebar------>
+    <div class=" container-fluid mynav">
+      <img src="images/logo.png" class="img-fluid mt-3">
+    <div id="sidebar">
+      <div class="navcontent ">
+        <div>
+      <ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">now_playing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">top_rated</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">upcoming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">latest</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contactus">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navicons container d-flex justify-content-center text-white "> 
+     <a href="#asp"><i class="fa-brands fa-facebook-f mx-2 mt-5 pt-5"></i></a>
+     <a href="#asp"><i class="fa-brands fa-twitter mx-2 mt-5 pt-5"></i></a>
+      <a href="#asp"><i class="fa-solid fa-globe mx-2 mt-5 pt-5"></i></a>
+    </div>
+    <p class=" px-3 mt-5">Contact Us 
+      Copyright Â© 2019 All Rights Reserved.</p>
+    </div>
+ 
+      <div id="sidebar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+  </div>
+  <div class="position-fixed bottom-0 mb-3 container">
+    <div><i class="fa-solid fa-globe my-2"></i></div>
+    <div><i class="fa-solid fa-share-nodes my-2"></i></div>
+    
+</div>
+
+    </div>
+
+
+
+    <!-----display------>
+
+    <header class=" w-50 d-flex m-auto justify-content-around">
+    
+     <form id="form" >
+        <input type="text" placeholder="get movies by word" id="search" class="search" />
+    </form>
+    <form id="form2">
+    <input type="text" placeholder="search..." id="search2" class="search2"/>
+  </form>
+  
+    </header>
+
+    <section class="container">
+    <main id="main" class="movies">
+     
+    </main>
+   </section>
+
+
+
+ <section id="contactus" class="container-fluid w-75 my-5 py-5">
+   <h3 class="text-white">Contact Us..</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" class="form-control my-2 " onkeyup="validateName()" id="nameinput" placeholder="Enter Your Name" aria-label="First name">
+          <input type="number" class="form-control my-2" onkeyup="validatePhone()" id="phoneinput" placeholder="Enter Phone" aria-label="phone">
+          <input type="password" class="form-control my-2" onkeyup="validatePassword()" id="passwordinput" placeholder="Enter Password" aria-label="password">
+        
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control my-2" onkeyup="validateEmail()" id="emailinput" placeholder="Enter Email" aria-label="email">
+          <input type="number" class="form-control my-2" onkeyup="validateAge()" id="ageinput" placeholder="Enter Age" aria-label="Age">
+          <input type="password" class="form-control my-2" onkeyup="validateRepassword()" id="repasswordinput" placeholder="Enter Repassword" aria-label="password">
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-danger mt-2">Submit</button>
+     
+    </section> 
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+          <script src="js/main.js"></script>
+         
+    </body>
+</html>

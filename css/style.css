@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+
+
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+header h1 {
+  color: rgba(255,255,255,.7);
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.search ,.search2{
+  background-color: transparent;
+  border: 2px solid black;
+  border-bottom: 2px solid rgba(255,255,255,.7);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: rgba(255,255,255,.7);
+}
+
+.search::placeholder {
+  color: rgba(255,255,255,.7);
+}
+
+.search2::placeholder {
+  color: rgba(255,255,255,.7);
+}
+
+.search:focus {
+  outline: none;
+  background-color: black;
+}
+
+.search2:focus {
+  outline: none;
+  background-color: black;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+
+
+.overview {
+  background-color:rgba(255, 255, 255, 0.6);
+  padding: 10px ;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: transform 0.6s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+
+
+#contactus input{
+    background-color: black;
+    border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+
+
+
+
+
+#sidebar a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+#sidebar a:hover{
+  color: rgb(214, 50, 50);
+}
+
+
+
+
+
+
+
+#sidebar {
+  width: 200px;
+  background: black;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left 0.5s ease;
+  z-index: 9999;
+}
+
+#sidebar.visible {
+  left: 0px;
+  transition: left 0.7s ease;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding: 10px 0 10px 10px;
+  background: black;
+  border-bottom: 1px solid black;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+#sidebar-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  right: -60px;
+  top:50%;
+ 
+}
+
+#sidebar-btn span {
+  background-color: black;
+  height: 1px;
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.mynav{
+  position: fixed;
+  width: 5%;
+  height: 100%;
+  background-color: white;
+  z-index: 999999;
+}
+
+
+.navcontent p{
+  font-size: 13px;
+  color: rgb(185, 184, 184);
+}
